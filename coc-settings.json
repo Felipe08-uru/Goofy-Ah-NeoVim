@@ -1,0 +1,6 @@
+{
+  "diagnostic.checkCurrentLine: true",
+  "diagnostic.virtualText: false",
+  "diagnostic.virtualTextCurrentLineOnly: false",
+  "diagnostic.virtualTextPrefix: '<-'"
+}
