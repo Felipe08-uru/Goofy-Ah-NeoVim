@@ -31,3 +31,5 @@ cmd('set completeopt=menuone,noinsert,noselect')
 o.swapfile = false
 o.backup = false
 o.undofile = true
+
+cmd('let g:transparent_enabled = v:true')
