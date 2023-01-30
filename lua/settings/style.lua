@@ -1,6 +1,7 @@
 local cmd = vim.cmd
 
-vim.cmd.colorscheme 'catppuccin'
+vim.g.material_style = "deep ocean"
+vim.cmd.colorscheme 'material'
 
 vim.opt.list = true
 vim.opt.listchars:append "eol:↴"

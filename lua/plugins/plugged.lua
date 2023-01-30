@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
   -- Don't delete this line
   use 'wbthomason/packer.nvim'
 
-
   -- Autocompletion
   use ('neoclide/coc.nvim', {branch = 'master'})
   use {'windwp/nvim-autopairs', config = function() require('nvim-autopairs').setup {} end}
@@ -29,6 +28,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use 'catppuccin/nvim'
   use 'ayu-theme/ayu-vim'
+  use 'marko-cerovac/material.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'xiyaowong/nvim-transparent'
 
