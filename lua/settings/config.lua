@@ -32,4 +32,6 @@ o.swapfile = false
 o.backup = false
 o.undofile = true
 
-cmd('let g:transparent_enabled = v:true')
+cmd('let g:transparent_enabled = v:false')
+
+vim.opt.guifont = {"FiraCode Nerd Font", ":h10"}

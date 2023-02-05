@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   -- Themes and style
   use 'norcalli/nvim-colorizer.lua'
   use 'morhetz/gruvbox'
+  use 'NTBBloodbath/doom-one.nvim'
   use 'catppuccin/nvim'
   use 'ayu-theme/ayu-vim'
   use 'marko-cerovac/material.nvim'

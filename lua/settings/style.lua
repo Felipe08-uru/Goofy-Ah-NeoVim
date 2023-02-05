@@ -1,7 +1,6 @@
 local cmd = vim.cmd
 
-vim.g.material_style = "deep ocean"
-vim.cmd.colorscheme 'material'
+vim.cmd.colorscheme "doom-one"
 
 vim.opt.list = true
 vim.opt.listchars:append "eol:↴"
