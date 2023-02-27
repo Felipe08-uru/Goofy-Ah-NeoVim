@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use {'windwp/nvim-autopairs', config = function() require('nvim-autopairs').setup {} end}
 
   -- Themes and style
-  use 'norcalli/nvim-colorizer.lua'
+  use 'NvChad/nvim-colorizer.lua'
   use 'morhetz/gruvbox'
   use 'NTBBloodbath/doom-one.nvim'
   use 'catppuccin/nvim'
@@ -44,6 +44,15 @@ return require('packer').startup(function(use)
   use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
   use {'nvim-tree/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons',}, tag = 'nightly'}
   use 'mattn/emmet-vim'
+  use 'kevinhwang91/rnvimr'
+  use {
+  "startup-nvim/startup.nvim",
+    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    config = function()
+      require"startup".setup(require"settings/startup_nvim")
+    end
+  }
+  use 'nvim-telescope/telescope-file-browser.nvim'
 
   -- Plugin to comment lines
   use {'numToStr/Comment.nvim', config = function() require('Comment').setup() end}

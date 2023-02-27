@@ -12,7 +12,8 @@ o.hidden = true
 o.encoding = 'UTF-8'
 
 o.laststatus = 2
-o.clipboard = 'unnamedplus'
+-- o.clipboard = 'unnamedplus'
+cmd('set clipboard=unnamedplus')
 o.showcmd = false
 o.showmatch = false
 o.showmode = false
@@ -32,6 +33,6 @@ o.swapfile = false
 o.backup = false
 o.undofile = true
 
-cmd('let g:transparent_enabled = v:false')
+cmd('let g:transparent_enabled = v:true')
 
-vim.opt.guifont = {"FiraCode Nerd Font", ":h10"}
+vim.opt.guifont = {"FiraCode Nerd Font", ":h9"}

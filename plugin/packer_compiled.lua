@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["doom-one.nvim"] = {
+    loaded = true,
+    path = "/home/felipe/.local/share/nvim/site/pack/packer/start/doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -115,6 +120,11 @@ _G.packer_plugins = {
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/felipe/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
   nvim = {
     loaded = true,
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/nvim",
@@ -129,7 +139,7 @@ _G.packer_plugins = {
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
-    url = "https://github.com/norcalli/nvim-colorizer.lua"
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
   },
   ["nvim-transparent"] = {
     loaded = true,
@@ -156,6 +166,21 @@ _G.packer_plugins = {
     path = "/home/felipe/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/felipe/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  rnvimr = {
+    loaded = true,
+    path = "/home/felipe/.local/share/nvim/site/pack/packer/start/rnvimr",
+    url = "https://github.com/kevinhwang91/rnvimr"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/felipe/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["toggleterm.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
@@ -174,14 +199,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -10,19 +10,18 @@ keymap('n', '<leader>wq', ':wq<CR>', { noremap = true })
 keymap('n', '<leader>q', ':q<CR>', { noremap = true })
 keymap('n', '<leader>aj', ':qa<CR>', { noremap = true })
 keymap('n', '<leader>w', ':w<CR>', { noremap = true })
-keymap('n', '<leader>bb', ':bd<CR>', { noremap = true })
+keymap('n', '<leader>bd', ':bd<CR>', { noremap = true })
 
 cmd('nmap <silent>; $a;<ESC>')
 cmd('nmap <silent>, $a,<ESC>')
 
 keymap('n', '<leader>kp', ':let @*=expand("%")<CR>',  {noremap=true })
+
 keymap('n', '<leader>jvs', ':!node %<CR>',  {noremap=true })
 keymap('n', '<leader>py', ':!python3 %<CR>',  {noremap=true })
 keymap('n', '<leader>jv', ':!java %<CR>',  {noremap=true })
 
 keymap('n', '<leader>r', ':TransparentToggle<CR>', { noremap = true })
-
-keymap('i', 'hh', '<ESC>', { noremap = false })
 
 cmd('cnoreabbrev W! w!')
 cmd('cnoreabbrev Q! q!')
@@ -39,3 +38,9 @@ keymap('n', '<leader>t', ':ToggleTerm size=10 direction=float<cr>', { noremap = 
 
 keymap('n', '<leader><tab>', ':bn<cr>', { noremap = true })
 keymap('n', '<leader><s-tab>', ':bp<cr>', { noremap = true })
+
+keymap('n', '<leader>ranger', ':RnvimrToggle<cr>', {})
+
+keymap('n', '<leader>ff', ':Telescope find_files<cr>', {})
+keymap('n', '<leader>fb', ':Telescope buffers<cr>', {})
+keymap('n', '<leader>cs', ':Telescope colorscheme', {})
